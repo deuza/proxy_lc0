@@ -1,0 +1,12 @@
+# Local settings (host, user, paths): keep them out of the repository
+config.json
+
+# Logs of the proxy
+*.log
+
+# Python and PyInstaller build artifacts
+__pycache__/
+build/
+dist/
+venv/
+*.spec

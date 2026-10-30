@@ -1,0 +1,20 @@
+{
+  "_comment": "Copy to config.json, next to proxy_lc0.py or proxy_lc0.exe.",
+  "_comment_paths": "All lc0_* paths are absolute paths on the remote host.",
+  "host": "mac.example.lan",
+  "username": "user",
+  "port": 22,
+  "key_file": "~/.ssh/id_ed25519",
+  "ssh_options": [
+    "-o", "StrictHostKeyChecking=accept-new",
+    "-o", "ServerAliveInterval=15"
+  ],
+  "lc0_command": "/opt/homebrew/bin/lc0",
+  "lc0_weights": "/Users/user/lc0/BT3-768x15x24h-swa-2790000.pb.gz",
+  "lc0_syzygy": "/Users/user/lc0/Syzygy",
+  "lc0_nncache": 2000000,
+  "lc0_ramlimit_mb": 6000,
+  "lc0_logfile": "",
+  "logging_enabled": false,
+  "log_file": "debug.log"
+}
