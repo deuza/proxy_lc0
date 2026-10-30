@@ -281,11 +281,13 @@ local session: the restricted key only starts Lc0.
 
 ## Tested setup
 
-- GUI side: Nibbler on Windows 11, with the OpenSSH client of Windows.
+- GUI side: Nibbler on Windows 11, with the OpenSSH client of Windows. The
+  proxy also ran on Debian 13 and macOS.
 - Engine side: Apple M1 with 16 GB, macOS 27.2, Lc0 0.32.1 from Homebrew
-  with the Metal backend, Syzygy tablebases.
-- Speed: about 2,100 nodes per second with the network shipped by
-  Homebrew, about 260 with BT3-768x15x24h-swa-2790000 once warm.
+  with the Metal backend, Syzygy tablebases; Debian 13, with Lc0 0.32.1
+  built from source.
+- Speed on the Apple M1: about 2,100 nodes per second with the network
+  shipped by Homebrew, about 260 with BT3-768x15x24h-swa-2790000 once warm.
 
 ## Limits
 
@@ -309,5 +311,5 @@ whatever you want with it.
 
 ---
 
-Tested with Lc0 v0.32.1+git.dirty built Nov 23 2025, clients on Windows 11, Debian 12 and
-macOS, servers on Debian and macOS (Homebrew).
+Tested with Lc0 0.32.1, clients on Windows 11, Debian 13 and macOS, servers
+on Debian 13 and macOS (Homebrew).
