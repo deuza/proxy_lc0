@@ -1,3 +1,12 @@
+[![GitHub release](https://img.shields.io/github/v/release/deuza/proxy_lc0?style=plastic)](https://github.com/deuza/proxy_lc0/releases)
+![GitHub Release Date](https://img.shields.io/github/release-date/deuza/proxy_lc0)
+[![GitHub last commit](https://img.shields.io/github/last-commit/deuza/proxy_lc0?style=plastic)](https://github.com/deuza/proxy_lc0/commits/main)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/t/deuza/proxy_lc0)
+
+[![License: CC0](https://img.shields.io/badge/license-CC0_1.0-lightgrey.svg?style=plastic)](https://creativecommons.org/publicdomain/zero/1.0/)
+![Hack The Planet](https://img.shields.io/badge/hack-the--planet-black?style=flat-square\&logo=gnu\&logoColor=white)
+![Built With Love](https://img.shields.io/badge/built%20with-%E2%9D%A4%20by%20DeuZa-red?style=plastic)
+
 # proxy_lc0
 
 Un petit proxy en Python qui fait tourner Lc0 (Leela Chess Zero) sur une
@@ -302,11 +311,13 @@ ou depuis une session locale : la clé restreinte ne lance que Lc0.
 ## Configuration testée
 
 - Côté interface : Nibbler sous Windows 11, avec le client OpenSSH de
-  Windows.
+  Windows. Le proxy a aussi tourné sous Debian 13 et macOS.
 - Côté moteur : Apple M1 avec 16 Go, macOS 27.2, Lc0 0.32.1 de Homebrew
-  avec le backend Metal, tables Syzygy.
-- Vitesse : environ 2 100 nœuds par seconde avec le réseau fourni par
-  Homebrew, environ 260 avec BT3-768x15x24h-swa-2790000 une fois chaud.
+  avec le backend Metal, tables Syzygy ; Debian 13, avec Lc0 0.32.1
+  compilé depuis les sources.
+- Vitesse sur l'Apple M1 : environ 2 100 nœuds par seconde avec le réseau
+  fourni par Homebrew, environ 260 avec BT3-768x15x24h-swa-2790000 une fois
+  chaud.
 
 ## Limites
 
@@ -327,5 +338,10 @@ ou depuis une session locale : la clé restreinte ne lance que Lc0.
 
 ## Licence
 
-CC0 1.0 Universal (dédicace au domaine public), comme proxy_stockfish. Voir
-le fichier `LICENSE`.
+[CC0 1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/).
+Faites-en ce que vous voulez.
+
+---
+
+Testé avec Lc0 0.32.1, clients sous Windows 11, Debian 13 et macOS,
+serveurs sous Debian 13 et macOS (Homebrew).
